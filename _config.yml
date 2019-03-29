@@ -6,9 +6,9 @@ gems:
 # Site settings
 title: "Android Framework"
 description: > # this means to ignore newlines until "email:"
-   Dreamgonfly's blog
+   JI7154's blog
 
-email: dreamgonfly@gmail.com
+email: cycyou78@gmail.com
 #blog logo
 logo: "/assets/images/dragonfly_moon.jpg"
 float_logo: false # true, false (default)
