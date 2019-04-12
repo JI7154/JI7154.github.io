@@ -197,7 +197,7 @@ q {
  */
 
 small {
-    font-size: 80%;
+    font-size: 60%;
 }
 
 /**
@@ -206,7 +206,7 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
+    font-size: 50%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
@@ -287,7 +287,7 @@ input,
 select,
 textarea {
     font-family: inherit; /* 1 */
-    font-size: 100%; /* 2 */
+    font-size: 70%; /* 2 */
     margin: 0; /* 3 */
 }
 
