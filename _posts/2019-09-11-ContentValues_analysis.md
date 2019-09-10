@@ -355,4 +355,4 @@ callers have tried smashing into their selections.)
 
 Updates ContentValues to internally use more efficient ArrayMap. "
 
-로 Extend SQLiteQueryBuilder for update and delete 를 위한 Commit,Merge 중 ArrayList가 더 효율적이여서 ContentValues에서 mValues의 자료형을 변경한 것을 확인했다. 그러나 put 함수의 오버로딩에 대한 변경 사항은 없었다. 인스턴스별로 나누어져 있는 이유는 아직 찾지 못했으나 나눠져 있는 put 함수들을 하나로 합쳐서 빌드와 성능테스트를 시도 중입니다.
+로 Extend SQLiteQueryBuilder for update and delete 를 위한 Commit,Merge 중 ArrayList가 더 효율적이여서 ContentValues에서 mValues의 자료형을 변경한 것을 확인했다. 그러나 put 함수의 오버로딩에 대한 변경 사항은 없었다. 인스턴스별로 나누어져 있는 이유는 아직 찾지 못했으나 인스턴스별로 나눠져 있는 put 함수들을 제거하고 하나의 put(String,Object) 의 함수로 실행하여 빌드한 결과 빌드가 성공했다.
