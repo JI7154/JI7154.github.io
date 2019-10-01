@@ -10,8 +10,7 @@ Java Byte Code Analysis
 지금까지 개선해 왔던 코드가 조금 더 확실하게 안전한지 검증해 보기 위해 Java Byte 코드를 이용하여 확인해 보았다.
 우선 바이트코드 확인을 위한 단위테스트에서 사용한 코드들은 다음과 같다.
 
-```
-
+```c
 //개선하기 이전의 ContentProviderOperation.java 의 withValue 함수
 public static void withValueBefore(String key, Object value) {
 
@@ -212,7 +211,7 @@ private HashMap<String, Object> mValues;
 
 동작 과정은 withValue 함수에서 ContentValues에 존재하는 put 함수를 호출하면 ContentValues에 존재한 HashMap<String,Object> 형태의 자료구조에 key,value를 저장하는 형태이다.
 
-```
+```c
 
 // 개선전 withValue 의 바이트 코드
 public static void withValueBefore(java.lang.String, java.lang.Object);
@@ -366,7 +365,7 @@ public static void withValue(java.lang.String, java.lang.Object);
 
 위의 바이트코드를 보면 ContentValues의 put함수를 호출하며 넘겨주는 파라미터에서 이전의 코드는 캐스팅후에 넘겨주고 개선 후 코드는 Object 형태로 넘기는 것을 알 수 있다.
 
-```
+```c
 
 //개선전 ContentValues의 바이트코드
 public class ContentValuesBefore {
