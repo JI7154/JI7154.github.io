@@ -1,10 +1,11 @@
+remote_theme: saikiransripada/mixyll
 # Site settings
-title:       Mixyll
-email:       hello@saikiransripada.com
-author:      Sai Kiran Sripada
-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+title:       JI`s gitB
+email:       cycyou78@gmail.com
+author:      JiSooKim
+description: ""
 baseurl:     ""
-url:         "https://mixyll.saikiransripada.com"
+url:         "https://Ji7154.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
@@ -84,3 +85,4 @@ exclude:
   - Rakefile
   - README.md
   - vendor
+ 
