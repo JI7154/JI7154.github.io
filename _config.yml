@@ -1,65 +1,86 @@
-# Build settings
-gems:
-  - jemoji
-  - jekyll-paginate
-
 # Site settings
-title: "Android Framework"
-description: > # this means to ignore newlines until "email:"
-   JI7154's blog
+title:       Mixyll
+email:       hello@saikiransripada.com
+author:      Sai Kiran Sripada
+description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+baseurl:     ""
+url:         "https://mixyll.saikiransripada.com"
+date_format: "%b %-d, %Y"
+header_pages:
+ - about.md
+ - contact.html
 
-email: cycyou78@gmail.com
-#blog logo
-logo: "/assets/images/dragonfly_moon.jpg"
-float_logo: false # true, false (default)
+google_analytics:
 
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+# Optional features
+animated:             true
+show_related_posts:   true
+show_post_footers:    false
+show_social_icons:    true
 
-name: 'JI7154'
-author: 'JI7154'
-author_image: "/assets/images/dragonfly_moon.jpg"
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: false
 
-paginate:	5
+# Disqus post comments
+disqus_shortname:
 
-url: "https://JI7154.github.io" # the base hostname & protocol for your site
-baseurl: ""
-#used to display twitter cards
-#twitter_handle: '@dreamgonfly'
+# Social icons
+github_username: saikiransripada
+twitter_username: wp_user
+linkedin_username: saikiransripada
 
-#fill in disqus shortname to use disqus
-disqus: JI7154-blog
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: true
+share_linkedin: true
+share_digg: true
+share_tumblr: true
+share_reddit: true
+share_stumbleupon: true
+share_hackernews: true
 
-google_analytics: UA-91026007-2
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share:'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+    post_footer:    'Lorem ipsum'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'en_US'
 
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	#https://twitter.com/dirkfabisch
-    desc: #Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    :title
+paginate:     4
+sass:
+  style: compressed
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-  - icon:	facebook
-    url:	#https://facebook.com/???
-    desc: #Connect with me facebook
-    share_url: https://www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/dreamgonfly
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
-
-markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - vendor
